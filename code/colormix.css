@@ -1,0 +1,15 @@
+#showColor{
+    border-radius: 50%;
+    border-style: solid;
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.slider{
+   width: 200px !important;
+   margin: auto;
+    
+}

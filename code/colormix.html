@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="hr">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Ivan">
+	<meta name="robots" content="index,follow">
+	<meta name="googlebot" content="index,follow">
+	<link rel="stylesheet" type="text/css" href="colormix.css">
+	<link rel="icon" href="favicon.ico" type="image/ico">
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Google Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!--Viewport scaling-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="body">
+<h1 class="text-center" style="font-size: 50px; font-family: Courier;">Color Mixer</h1>
+<br>
+<div class="container-fluid"> 
+    <div id="showColor">
+		<span style="font-size: 20px; font-weight: bold;" id="rgbTxt">
+			rgb
+		</span>
+    </div>
+    <br>
+    <div class="row">
+        <form action="" id="form">
+			<div class="col-sm-4">
+				<label for="redSlider" style="margin-left: 47%;">Red</label>
+				<input type="range" min="0" max="255" class="slider form-control" id="redSlider" oninput="colorChange()">
+			</div>
+			<div class="col-sm-4">
+				<label for="greenSlider" style="margin-left: 45%;">Green</label>
+				<input type="range" min="0" max="255" class="slider form-control" id="greenSlider" oninput="colorChange()">
+			</div>
+			<label for="blueSlider" style="margin-left: 15.5%;">Blue</label>
+			<div class="col-sm-4">
+				<input type="range" min="0" max="255" class="slider form-control" id="blueSlider" oninput="colorChange()">
+			</div>
+		</form>
+    </div>
+</div>
+
+<script src="./colormix.js"></script>
+</body>
+</html>
